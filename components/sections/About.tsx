@@ -9,11 +9,15 @@ import {
   Car,
   Trophy,
   Check,
+  Cake,
+  Rocket,
 } from "lucide-react";
 import { softSkills } from "@/data/skills";
+import { site } from "@/data/site";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Reveal, Stagger, StaggerItem } from "@/components/animations/Reveal";
 import { GlassCard } from "@/components/ui/GlassCard";
+import { MindMap } from "@/components/formation/MindMap";
 
 const values = [
   {
@@ -45,9 +49,18 @@ const objectives = [
 ];
 
 const facts = [
-  { icon: Languages, label: "Langues", value: "Anglais (lu, écrit, parlé) · Espagnol (scolaire)" },
+  { icon: Cake, label: "Âge", value: `${site.age} ans` },
+  {
+    icon: Languages,
+    label: "Langues",
+    value: "Anglais (lu, écrit, parlé) · Espagnol (scolaire)",
+  },
   { icon: Car, label: "Mobilité", value: "Véhiculé — permis B" },
-  { icon: Trophy, label: "Centres d'intérêt", value: "Football américain, basketball, musique, art" },
+  {
+    icon: Trophy,
+    label: "Centres d'intérêt",
+    value: "Football américain, basketball, musique, art",
+  },
 ];
 
 export function About() {
@@ -61,7 +74,28 @@ export function About() {
           description="Étudiant en BUT Génie Mécanique & Productique, je me spécialise dans la conception et le bureau d'études — sans jamais perdre de vue le terrain où la pièce prend vie."
         />
 
-        <div className="mt-14 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
+        {/* Mon projet */}
+        <Reveal className="mt-8">
+          <div className="relative overflow-hidden rounded-3xl border border-accent/30 bg-accent/[0.06] p-6 sm:p-7">
+            <div className="flex items-start gap-4">
+              <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-accent text-white">
+                <Rocket className="h-5 w-5" />
+              </span>
+              <div>
+                <p className="font-mono text-[11px] uppercase tracking-widest text-accent">
+                  Mon projet
+                </p>
+                <p className="mt-1 text-pretty text-lg font-medium leading-snug">
+                  Travailler dans le domaine de la{" "}
+                  <span className="text-accent">conception mécanique</span> et du
+                  bureau d&apos;études — là où le dessin devient une pièce réelle.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Reveal>
+
+        <div className="mt-8 grid gap-8 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Narrative + values */}
           <div className="space-y-8">
             <Reveal>
@@ -150,6 +184,23 @@ export function About() {
               </GlassCard>
             </Reveal>
           </div>
+        </div>
+
+        {/* Carte mentale des qualités */}
+        <div className="mt-8">
+          <Reveal>
+            <GlassCard className="p-6 sm:p-8">
+              <p className="font-mono text-[11px] uppercase tracking-widest text-accent">
+                Carte mentale
+              </p>
+              <h3 className="mt-1 text-xl font-bold tracking-tight">
+                Mes qualités en un coup d&apos;œil
+              </h3>
+              <div className="mt-4">
+                <MindMap />
+              </div>
+            </GlassCard>
+          </Reveal>
         </div>
       </div>
     </section>

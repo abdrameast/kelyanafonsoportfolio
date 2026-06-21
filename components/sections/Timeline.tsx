@@ -27,7 +27,7 @@ export function Timeline() {
     <section id="timeline" className="relative py-24 sm:py-32">
       <div className="container">
         <SectionHeading
-          index="07"
+          index="08"
           eyebrow="Chronologie"
           title="Le parcours, étape par étape."
           description="Du baccalauréat à aujourd'hui — formation, stages et expériences, au fil du scroll."

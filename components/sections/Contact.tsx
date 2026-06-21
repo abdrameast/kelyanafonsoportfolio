@@ -17,7 +17,7 @@ export function Contact() {
       />
       <div className="container">
         <SectionHeading
-          index="08"
+          index="09"
           eyebrow="Contact"
           title="Discutons de votre besoin."
           description="Stage, alternance, poste en bureau d'études ou simple question — je réponds avec plaisir."

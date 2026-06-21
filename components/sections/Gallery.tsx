@@ -57,7 +57,7 @@ export function Gallery() {
     <section id="galerie" className="relative py-24 sm:py-32">
       <div className="container">
         <SectionHeading
-          index="06"
+          index="07"
           eyebrow="Galerie"
           title="Schémas, plans & terrain."
           description="Une sélection de visuels extraits des rapports : schémas CAO, plans, essais et interventions. Cliquez pour agrandir — navigation au clavier."

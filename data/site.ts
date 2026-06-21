@@ -11,6 +11,8 @@ export const site = {
   shortName: "Kelyan AFONSO",
   title: "Ingénieur Génie Mécanique & Productique",
   role: "Génie Mécanique & Productique",
+  // ⬇️ À confirmer / ajuster.
+  age: 21,
   tagline:
     "Conception mécanique, CAO et bureau d'études. J'imagine, modélise et fiabilise des solutions concrètes — du dessin SolidWorks à la pièce qui fonctionne.",
   description:
@@ -36,6 +38,7 @@ export const nav: NavItem[] = [
   { label: "Compétences", href: "/#competences", id: "competences" },
   { label: "Parcours", href: "/#experiences", id: "experiences" },
   { label: "Rapports", href: "/#rapports", id: "rapports" },
+  { label: "Formation", href: "/#formation", id: "formation" },
   { label: "Projets", href: "/#projets", id: "projets" },
   { label: "Galerie", href: "/#galerie", id: "galerie" },
   { label: "Contact", href: "/#contact", id: "contact" },

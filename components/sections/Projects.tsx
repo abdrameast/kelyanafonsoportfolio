@@ -61,7 +61,7 @@ export function Projects() {
     <section id="projets" className="relative py-24 sm:py-32">
       <div className="container">
         <SectionHeading
-          index="05"
+          index="06"
           eyebrow="Projets"
           title="Réalisations & travaux."
           description="Des projets concrets, du bureau d'études à la programmation robotisée. Cliquez pour le détail."

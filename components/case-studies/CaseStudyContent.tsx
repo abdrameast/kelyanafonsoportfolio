@@ -289,9 +289,18 @@ export function CaseStudyContent({ stage }: { stage: Stage }) {
                 </h2>
               </div>
             </div>
-            <div className="flex gap-2">
+            <div className="flex flex-wrap gap-2">
               <Button href={stage.pdf} external variant="outline" size="sm" icon={Download}>
                 Télécharger
+              </Button>
+              <Button
+                href={`/posters/poster-${stage.slug}.pdf`}
+                external
+                variant="ghost"
+                size="sm"
+                icon={Images}
+              >
+                Poster du stage
               </Button>
               <Button
                 href={stage.pdf}
